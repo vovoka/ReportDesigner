@@ -10,3 +10,7 @@ dmypy.json
 
 # Idea
 .idea/
+
+
+# VSCode
+.vscode/
