@@ -15,11 +15,17 @@ To readjust it back to Production:
     aioreloader.start()
     ```
 
-```
+
+## To run
+Make sure that the app adjustet to Production mode.  
+
+``` sh
 export DB_HOST=5433
 docker-compose up --build
-По умолчанию создаётся одна запись в таблице
 ```
+
+`api/sql/init_db.sql` creates a TABLE akd add 2 records into it.
+
 
 создать новую запись http://0.0.0.0:8080/create  
 получить все записи http://0.0.0.0:8080/groups  
