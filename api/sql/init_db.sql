@@ -1,0 +1,13 @@
+CREATE TABLE groups (
+ id serial PRIMARY KEY,
+ title VARCHAR (50) UNIQUE NOT NULL,
+ date_created timestamp NOT NULL DEFAULT NOW(),
+ data JSONB NOT NULL
+);
+
+
+INSERT INTO groups(title, data)
+       VALUES ('Older project', '{"dateModified": "2018-04-24T12:39:14.062285+03:00", "id": "0001", "name": "JUNE-2018", "description": "USUAL_DESCRIPTION", "status": "active", "url": null, "syncJira": false, "sync1C": true, "syncExcel": true, "projects": [{"id": "X_1", "name": "PROM", "amount": "222000", "ownerBuh": "@vasya", "ownerProduct": "@olya", "relatedGroups": "XXX", "employees": [{"id": "XXX", "name": "Pro1 Cash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}, {"id": "XXX", "name": "Pro1 Mash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}, {"id": "XXX", "name": "Pro1 Lash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}]}, {"id": "XXX", "name": "CRAFT", "amount": "222000", "ownerBuh": "@vasya", "ownerProduct": "@olya", "relatedGroups": "XXX", "employees": [{"id": "XXX", "name": "Cra1 Dash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}, {"id": "XXX", "name": "Cra1 Gash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}, {"id": "XXX", "name": "Cra1 Mash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}]}]}');
+
+INSERT INTO groups(title, data)
+       VALUES ('More new project', '{"dateModified": "2019-05-24T12:39:14.072285+03:00", "id": "0002", "name": "JULY-2019", "description": "USUAL_DESCRIPTION", "status": "active", "url": null, "syncJira": false, "sync1C": true, "syncExcel": true, "projects": [{"id": "X_1", "name": "PROM", "amount": "222000", "ownerBuh": "@vasya", "ownerProduct": "@olya", "relatedGroups": "XXX", "employees": [{"id": "XXX", "name": "Pro2 Cash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}, {"id": "XXX", "name": "Pro2 Mash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}, {"id": "XXX", "name": "Pr2o Lash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}]}, {"id": "XXX", "name": "CRAFT", "amount": "222000", "ownerBuh": "@vasya", "ownerProduct": "@olya", "relatedGroups": "XXX", "employees": [{"id": "XXX", "name": "Cra2 Dash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}, {"id": "XXX", "name": "Cra2 Gash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}, {"id": "XXX", "name": "Cra2 Mash", "grade": "CEO", "email": "jjjj@jjjj.ccc", "value": "11000", "relatedProjects": "XXX"}]}]}');

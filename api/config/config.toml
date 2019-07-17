@@ -1,0 +1,8 @@
+[database]
+DB_HOST = 'db'
+
+DB_PORT = 5432
+
+DB_NAME = 'report_designer'
+DB_USER = 'postgres'
+DB_PASS = 'postgres'
