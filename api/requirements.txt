@@ -1,6 +1,6 @@
 aiohttp==3.5.4
 async-timeout==3.0.1
-asyncpg==0.18.3
+asyncpg==0.21.0
 asyncpgsa==0.26.0
 pytoml==0.1.20
 psycopg2==2.8.3
